@@ -1,0 +1,775 @@
+/*second.blade.php页面单独样式,(前端同事写的样式有点坑)*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+  margin: 0;
+  padding: 0;
+}
+i, em {
+  font-style: normal;
+}
+
+/*各浏览器显示不同，去掉边框等默认样式*/
+fieldset, img, input, button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline-style: none;
+}
+ul, ol, li {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+select, input, textarea {
+  font-size: 12px;
+  margin: 0;
+}
+/*防止拖动 影响布局*/
+textarea {
+  resize: none;
+}
+/*去掉行内替换元素空白缝隙*/
+img {
+  border: 0;
+  vertical-align: middle;
+}
+/*引用过了bootstrap的字体*/
+body {
+  color: #222;
+  font-size: 16px;
+}
+/*清除浮动*/
+.clear:after {
+  content: '\20';
+  display: block;
+  height: 0;
+  clear: both;
+}
+/*a标签样式*/
+a {
+  color: #222;
+  text-decoration: none;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  // color: #dd171e;
+}
+a:active {
+  text-decoration: none;
+  // color: #dd171e;
+}
+
+/*字体引用*/
+@font-face {
+    font-family: "glyphicons-halflings-regular";
+    src: url('../Fonts/glyphicons-halflings-regular.TTF');
+}
+
+
+/*首页*/
+.logo-lg img {
+  width: 23%;
+}
+.sidebar-mini.sidebar-collapse .main-header .logo>.logo-mini {
+  font-size: 14px;
+}
+.user-panel {
+  color: #fff;
+  margin: 20px 0;
+}
+.content-wrapper .content {
+  background: #fff;
+  margin: 10px;
+  border-top: 3px solid #3c8dbc;
+  min-height: 808px;
+}
+.home-content .form-group {
+  margin-top: 35px;
+  margin-left: 50px;
+  line-height: 34px;
+}
+.form-group { 
+  overflow: hidden;
+}
+.form-group > label , .form-group > span {
+  float: left;
+  width: 9%;
+}
+.order-form .form-group > label {
+  width: 15%;
+}
+.form-group .form-control {
+  width: 70%;
+  display: inline-block;
+  margin-left: 20px;
+}
+.form-group .form-control {
+  width: 70%;
+  display: inline-block;
+  margin-left: 20px;
+  background: #fff;
+}
+.form-group.form-ticket .form-control {
+  margin-left: 0;
+}
+.nextStep {
+  text-align: center;
+  margin-top: 50px;
+}
+.nextStep a {
+  display: inline-block;
+  border: 1px solid #dfdfdf;
+  width: 95px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+/*电子票*/
+.proInfo {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.proInfo > span {
+  float: left;
+  width: 9%;
+}
+.proInfo input {
+  float: left;
+  width: 70%;
+  border: 1px solid #dfdfdf;
+  padding-left: 10px;
+  height: 34px;
+}
+.radio {
+  display: inline-block;
+} 
+.title-radio .radio{
+  margin-left: 145px;
+}
+.boxImg {
+  border: 1px solid #dfdfdf;
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+}
+.form-file > div {
+  float: left;
+  width: 70%;
+}
+.form-file > div p , .form-file > div input {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 18px;
+}
+.form-file > div p , .form-file > div a {
+  margin-right: 40px;
+}
+.form-file > div a {
+  display: inline-block;
+  border: 1px solid #dfdfdf;
+  width: 90px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  margin-top: 16px;
+  font-size: 12px;
+}
+.form-file > div .boxImg {
+  margin-top: 0;
+}
+.content-radio > p {
+  display: inline-block;
+  width: 9%;
+}
+.content-radio > .radio {
+  margin-right: 10%;
+}
+.plus {
+  float: left;
+  width: 80%;
+}
+.plus li {
+  float: left;
+  margin-bottom: 20px;
+}
+.plus li span {
+  display: inline-block;
+  font-size: 14px;
+}
+.plus li span:first-child {
+  width: 63px;
+  height: 22px;
+  border: 1px solid #dfdfdf;
+  text-align: center;
+  line-height: 22px;
+  margin-right: 10px;
+}
+.plus li span:nth-child(2) {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #666;
+  text-align: center;
+  line-height: 19px;
+  margin-right: 35px;
+  cursor: pointer;
+}
+.plusTable {
+  background: #eee;
+  width: 100%;
+}
+.plusTable td {
+  width: 1%;
+  height: 35px;
+  text-align: center;
+  border: 1px solid #dfdfdf;
+  font-size: 14px;
+}
+.plusTable tr td:first-child {
+  width: 5%;
+}
+.plusTable tr td:last-child {
+  width: 50%;
+}
+
+.plusTable td span {
+  display: inline-block;
+  border: 1px solid #666;
+  width: 14px;
+  height: 14px;
+  text-align: center;
+  line-height: 13px;
+  margin-right: 10px;
+}
+.star {
+  color: rgb(229, 28, 35);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.starTable {
+  width: 100%;
+}
+.starTable tr:first-child {
+  background: #eee;
+}
+.starTable td {
+  width: 110px;
+  height: 35px;
+  text-align: center;
+  border: 1px solid #dfdfdf;
+  font-size: 12px;
+}
+.starTable i {
+  color: rgb(229, 28, 35); 
+}
+.starTable tr td:nth-child(1) {
+  width: 220px;
+  padding: 5px 0;
+  box-sizing: border-box;
+}
+.starTable tr td a {
+  display: inline-block;
+  border: 1px solid #dfdfdf;
+  width: 70px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  vertical-align: top;
+  margin-top: 5px;
+  margin-left: 10px;
+} 
+.starTable .boxImg {
+  width: 35px;
+  height: 35px;
+}
+.starTable tr td input {
+  width: 60px;
+  display: inline-block;
+}
+.starTable tr td:first-child input {
+  width: 85px;
+  vertical-align: top;
+  margin-top: 7px;
+}
+.bottomBtn {
+  text-align: center;
+  margin: 20px 0;
+}
+button.btn-default {
+  display: inline-block;
+  margin-right: 30px;
+  width: 95px;
+  height: 30px;
+  text-align: center;
+  padding: 0;
+  background: #fff;
+}
+.detailEdit {
+  margin: 15px 0;
+}
+.pad {
+  padding: 0;
+}
+/*订单*/
+.orderTable {
+  margin-top: 20px;
+  width: 100%;
+}
+.orderTable td {
+  border: 1px solid #dfdfdf;
+  width: 120px;
+  text-align: center;
+  font-size: 12px;
+  height: 35px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.orderTable tr:first-child td {
+  background: #eee;
+}
+.orderTable tr td:nth-child(7) {
+  width: 230px;
+}
+.orderTable tr td:nth-child(8) {
+  width: 200px;
+}
+.orderTable tr td:nth-child(2) {
+  width: 200px;
+}
+
+.orderTable.orderTableTwo tr td:nth-child(2) {
+  width: 80px;
+}
+.order-form .form-group > label {
+  font-size: 14px;
+  margin-top: 6px;
+}
+.statusTable tr:nth-child(2) td span {
+  margin: 0 15%;
+}
+.statusTable tr:nth-child(2) td:first-child span {
+  margin-left: 10px;
+}
+.statusTable tr td label {
+  vertical-align: middle;
+  margin-top: 2px;
+}
+.statusTable tr td:first-child {
+  text-align: left;
+}
+.statusTable tr:nth-child(4) td span {
+  margin: 0 15%;
+}
+.statusTable tr:nth-child(4) td:first-child span {
+  margin-left: 10px;
+}
+.form-group.tabInput .form-control {
+  margin-left: 0;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+}
+.tabInput .btn.btn-default{
+  margin-bottom: 4px;
+  display: inline-block;
+}
+.tdInput .tabInput:nth-of-type(1) .form-control {
+  display: inline-block;
+  margin-top: 18px;
+}
+.tdInput .tabInput:nth-of-type(1) .btn.btn-default {
+  margin-bottom: 10px;
+}
+
+.orderProduct {
+  width: 80px;
+  height: 80px;
+  background: #dfdfdf;
+  display: inline-block;
+  float: left;
+}
+.orderProduct img {
+  width: 100%;
+}
+.productDetail {
+  float: left;
+}
+.productDetail p span {
+  display: inline-block;
+  margin: 0 70px 20px 10px;
+  font-size: 14px;
+}
+.receiverInfo > div {
+  background: #eee;
+  line-height: 35px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.receiverInfo > h4 {
+  margin: 20px 0;
+  font-size: 14px;
+}
+.receiverInfo > div p {
+  font-size: 14px;
+}
+.receiverInfo {
+  margin-bottom: 20px;
+}
+.receiverTitle {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #bbb;
+}
+.receiverTitle span {
+  margin-right: 7%;
+}
+.receiverTitle button.btn-default {
+  width: 75px;
+}
+.receiverUl {
+  margin-top: 25px;
+}
+.receiverTime div {
+  float: left;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+.receiverTime div:nth-of-type(1) {
+  width: 7%;
+  margin-right: 35px;
+  border-right: 1px solid #bbb;
+}
+.receiverTime div:nth-of-type(2) {
+  padding-top: 20px;
+}
+.checkbox, .radio {
+  font-size: 14px;
+}
+
+.deals .orderTable tr td:nth-child(2) {
+  width: 105px;
+}
+.deals .orderTable tr td:nth-child(7) {
+  width: 120px;
+}
+.deals .orderTable tr td:nth-child(8) {
+  width: 120px;
+}
+.deals td button.btn-default {
+  margin-right: 0;
+  margin-bottom: 15px;
+}
+.deals td button.btn-default:nth-of-type(1) {
+  margin-top: 15px;
+}
+.form-group.orderDate .form-control {
+  width: 100%;
+}
+.order-form .form-group.orderDate > label {
+  width: 19%;
+}
+
+.orderStatus {
+  border-bottom: 1px solid #dfdfdf;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.orderStatus a {
+  display: inline-block;
+  width: 200px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+.orderStatus .status {
+  background: #3c8dbc;
+  color: #fff;
+  border-radius: 4px;
+}
+.statusTable td p {
+  line-height: 30px;
+}
+.orderProduct {
+  margin-bottom: 10px;
+}
+.layer {
+  display: none;
+}
+
+.info-popup {
+  // position: absolute;
+  z-index: 10000;
+  // top: 50%;
+  // left: 50%;
+  // display: none;
+  overflow: hidden;
+  width: 270px;
+  // -webkit-transition-property: -webkit-transform,opacity;
+  // transition-property: transform,opacity;
+  // -webkit-transform: translate3d(-50%,-50%,0) scale(1.185);
+  // transform: translate3d(-50%,-50%,0) scale(1.185);
+  text-align: center;
+  color: #000;
+  border-radius: 13px;
+}
+.info-popup-inner {
+  // position: relative;
+  padding: 15px;
+  border-radius: 13px 13px 0 0;
+  background: rgba(255,255,255,.95);
+}
+.info-popup-title {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+.info-popup-inner:after {
+  position: absolute;
+  z-index: 15;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  content: '';
+  -webkit-transform: scaleY(.5);
+  transform: scaleY(.5);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  background-color: rgba(0,0,0,.2);
+}
+.info-popup-button:first-child {
+  border-radius: 0 0 0 13px;
+}
+.info-popup-button.mui-popup-button-bold {
+  font-weight: 600;
+}
+.info-popup-button:last-child {
+  border-radius: 0 0 13px;
+}
+.info-popup-buttons {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 44px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.info-popup-button:after {
+  position: absolute;
+  z-index: 15;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  display: block;
+  width: 1px;
+  height: 100%;
+  content: '';
+  -webkit-transform: scaleX(.5);
+  transform: scaleX(.5);
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  background-color: rgba(0,0,0,.2);
+}
+.info-popup-button {
+  font-size: 17px;
+  line-height: 44px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  height: 44px;
+  padding: 0 5px;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #666;
+  background: rgba(255,255,255,.95);
+  -webkit-box-flex: 1;
+}
+.info-popup-backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  // display: none;
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
+  background: rgba(0,0,0,.4);
+}
+.receiverInfo > div p:first-child span {
+  margin-right: 50px;
+}
+.tableBox td input {
+  background: #eee;
+  padding: 0 10px;
+  text-align: center;
+}
+.tableBox .starTable td input {
+  background: #fff;
+}
+button.btn-default#daterange-btn {
+  width: 70%;
+  height: 35px;
+  margin-left: 20px;
+  margin-right: 0;
+}
+.fa.fa-calendar {
+  margin-right: 20px;
+}
+.boxImg img {
+  width: 100%;
+}
+
+/* 弹出框layer */
+.addBox {
+  width:750px;
+}
+.addBox > .row img {
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+  background: pink;
+} 
+.addBox p {
+  line-height: 30px;  
+}
+.addBox .form-group > label,.addBox .form-group > span {
+    float: left;
+    width: 25%;
+    font-weight: 500;
+}
+.addBox .form-group .form-control {
+  width: 69%;
+}
+.addBox button.btn-default#daterange-btn {
+  width: 72%;
+  margin-left: 5px;
+}
+.addBox .form-group .form-control {
+  margin-left: 5px; 
+}
+/*分页样式*/
+.pageStyle {
+  text-align: center;
+}
+/*重置bootstrap样式*/
+.modal-dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%) !important;
+}
+.form-group > label .col-sm-4 {
+  width: 33.33333333%;
+}
+
+/*所有手机*/
+@media screen and (max-width: 767px) {
+  .starTable tr td:nth-child(1) {
+    width: 280px;
+  }
+  .logo-lg img {
+    width: 13%;
+  }
+  .tableBox {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .orderTable {
+    width: 1200px;
+  }
+  .plusTable {
+    width: 1200px;
+  }
+  .starTable {
+    width: 1200px;
+    margin-bottom: 15px;
+  }
+  .order-form .form-group > label {
+    width: 22%;
+    font-weight: 500;
+  }
+  button.btn-default {
+    margin-bottom: 10px;
+  }
+  .home-content .form-group {
+    margin-left: 0;
+  }
+  .form-group > label, .form-group > span {
+    width: 26%;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .content-wrapper .content {
+    min-height: 630px;
+  }
+  .receiverTime div:nth-of-type(1) {
+    width: 25%;
+    margin-right: 8px;
+    border-right: 1px solid #bbb;
+  }
+  .receiverTime div:nth-of-type(2) {
+    padding-top: 1px;
+    font-size: 12px;
+    display: inline-block;
+    width: 71%;
+  }
+  .title-radio .radio {
+    margin-left: 0;
+    margin-right: 35px;
+  }
+  .proInfo > span {
+    width: 26%;
+    font-size: 14px;
+  }
+  .content-radio > p {
+    display: inline-block;
+    width: 40%;
+  }
+  .plus {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .plus li span:nth-child(2) {
+    margin-right: 45px;
+  }
+  .home-content .form-group > label {
+    width: 23%;
+  }
+  .orderStatus a {
+    width: 158px;
+  }
+  .receiverInfo > div p:first-child span {
+    display: block;
+  }
+
+
+}
+
+/*iphone5手机*/
+@media screen and (max-width: 320px) {
+
+}
+
+/*iphone plus手机*/
+@media screen and (min-width: 414px) and (max-width: 440px)  {
+
+}

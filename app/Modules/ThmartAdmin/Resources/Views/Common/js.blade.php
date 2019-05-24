@@ -1,0 +1,1 @@
+<script src="/thmartAdmin/js/select2.full.min.js"></script>
